@@ -7,7 +7,7 @@ import JobPagination from './JobPagination';
 
 function App() {
   const [params, setParams] = useState({});
-  const [page, setPage] = useState(1);
+  const [page, setPage] = useState(2);
   const { jobs, loading, error, hasNextPage } = useFetchJobs(params, page)
   return (
     <Container className="my-4">
